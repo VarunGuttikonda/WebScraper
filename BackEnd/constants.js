@@ -19,18 +19,7 @@ const SITE_TO_SCRAPE = "https://www.naukri.com/";
 //Records for each job
 const DEFAULT_RECORDS_TO_SCRAPE = 20;
 // Jobs to scrape
-const DEFAULT_JOBS = [
-  "software engineer",
-  "data analyst",
-  "test engineer",
-  "web developer",
-  "network security",
-  "ui ux designer",
-  "database administrator",
-  "project manager",
-  "devops engineer",
-  "qa engineer",
-];
+const DEFAULT_JOBS = ["software engineer", "data analyst", "test engineer"];
 
 const SCREENSHOT_OPTIONS = { path: "./screenshot.jpg", fullPage: false };
 // Home Page
