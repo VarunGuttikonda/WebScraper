@@ -8,12 +8,13 @@ module.exports = async function (context, req) {
     let string_data = await csv.toString();
     context.bindings.storage = string_data;
     context.bindings.res = {
-      body: jsonArray,
+      body: JSON.stringify(jsonArray),
       statusCode: 200,
       headers: {
         "content-type": "application/json",
       },
     };
+    context.log("Everything executed properly");
     context.done();
   } catch (e) {
     context.error(e.message);
